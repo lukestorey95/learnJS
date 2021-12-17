@@ -1,0 +1,9 @@
+const kelvin = 293; // defines kelvin constant
+const celcius = kelvin - 273; // converts kelvin to celcius
+console.log(`The temperature is ${celcius} degrees in Celcius.`);
+let fahrenheit = celcius * (9/5) + 32; // converts celcius to fahrenheit
+fahrenheit = Math.floor(fahrenheit); // rounds down to nearest integer
+console.log(`The temperature is ${fahrenheit} degrees in Fahrenheit.`);
+let newton = celcius * (33/100); //converts celcius to fahrenheit
+newton = Math.floor(newton); // rounds down to nearest integer
+console.log(`The temperature is ${newton} degrees in Newton.`);
