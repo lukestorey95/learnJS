@@ -1,0 +1,19 @@
+const howOld = (age, year) => {
+  let thisYear = 2021;
+  let bornYear = thisYear - age;
+  
+  if (year > thisYear) {
+    let ageFuture = (year - thisYear) + age;
+    return `You will be ${ageFuture} in the year ${year}`;
+  } else if (year < bornYear) {
+    let preYears = bornYear - year;
+    return `The year ${year} was ${preYears} years before you were born`;
+  } else if (year < thisYear && year > bornYear) {
+    let agePast = age - (thisYear - year);
+    return `You were ${agePast} in the year ${year}`;
+  } else {
+    return 'error'
+  }
+}
+
+console.log(howOld(17, 2005));
